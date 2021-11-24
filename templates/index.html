@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>{{ title }} - All Online Orders</title>
+    </head>
+    <body>
+        <h1>All Online Orders</h1>
+        {% for order in all_orders %}
+            <ul>
+                <li>
+                    {{ order.customer_name }} bought: <b>{{ order.boardgame_name }}</b>. This game is for {{ order.num_of_players }} players. {{ order.description }}
+                </li>
+            </ul>
+        {% endfor %}
+    </body>
+</html>
