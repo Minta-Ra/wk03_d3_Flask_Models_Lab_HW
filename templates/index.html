@@ -7,7 +7,10 @@
         {% for order in all_orders %}
             <ul>
                 <li>
-                    {{ order.customer_name }} bought: <b>{{ order.boardgame_name }}</b>. This game is for {{ order.num_of_players }} players. {{ order.description }}
+                    {{ order.customer_name }} bought: 
+                    <a href="/orders/0"><b>{{ order.boardgame_name }}</b></a>. 
+                    This game is for {{ order.num_of_players }} players. 
+                    {{ order.description }}
                 </li>
             </ul>
         {% endfor %}
